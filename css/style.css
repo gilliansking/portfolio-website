@@ -1,0 +1,161 @@
+/*
+Colors used:
+Primary Color (Beige): #F6F6F0;
+Secondary Color (Black): #191714;
+Accent Color (Brown): #B7A98E
+*/
+body{
+    background-color: #F6F6F0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
+    color: #191714;
+}
+
+h1, h2, h3 {
+    font-family: 'Bodoni Moda', serif;
+    line-height: 1.2;
+}
+h1 {
+    font-size: 1.7222em;
+    font-weight: 900;
+    letter-spacing: 0.0389em;
+}
+
+h2 {
+    font-size: 1.4444em;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.0278em;
+}
+
+h3 {
+    font-size: 1.1667em;
+    font-weight: 500;
+    letter-spacing: 0.0222em;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.0111em;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #191714;
+    text-decoration: none; /* No underlining */
+}
+
+a:hover {
+    color: #B7A98E;
+    font-weight: 700;
+    text-decoration: none; /* Embolden when hovering over a link */
+}
+
+a:active { 
+    color: #191714;
+    font-weight: 700; /* Embolden when link selected */
+    text-decoration: none; 
+}
+
+a:hover,
+a:focus {
+    color: #B7A98E;
+    font-weight: 700; /* Embolden when element is targeted by keyboard */
+    text-decoration: none; 
+}
+
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #191714;
+    color: #F6F6F0; /* needed to override the default link color */
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.0556em;
+    padding: 10px;
+    border-radius: 0px;
+    transition: 0.2s opacity;
+    text-decoration: none;
+}
+
+.button:hover {
+    color: #B7A98E;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button:active { 
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    color: #B7A98E;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+    color: #B7A98E;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button.contact {
+    background-color: #F6F6F0;
+    color: #191714;
+    font-weight: 600;
+    text-decoration: none;
+}
+    
+.button.contact:hover {
+    background-color: #B7A98E;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button.contact:active { 
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    background-color: #B7A98E;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+.button.contact:hover,
+.button.contact:focus {
+    background-color: #B7A98E;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #191714;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1.5px solid #191714;
+}
+
+.button.secondary:hover {
+    background-color: #191714;
+    color: #F6F6F0;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button.secondary:active { 
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    background-color: #191714;
+    color: #F6F6F0;
+    font-weight: 600;
+    text-decoration: none; 
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    background-color: #191714;
+    color: #F6F6F0;
+    text-decoration: none; 
+}
