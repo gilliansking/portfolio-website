@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,900&family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>A little info on Gillian King</title>
         <link href="img/favicon.ico" rel="shortcut icon">
     </head>
     <body>
         <header>
-            <div>
-                <svg version="1.1" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+            <div class="container">
+                <svg version="1.1" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" class="logo">
                     <title>Logo</title>
                     <g fill="none" fill-rule="evenodd">
                         <circle cx="35" cy="35" r="34" stroke="#0B0B0B" stroke-width="2"/>
@@ -27,84 +27,84 @@
                 </svg>
                 <nav>
                     <ul>
-                        <li><a href="index.html">PROJECTS</a></li>
+                        <li><a href="index.html">WORK</a></li>
                         <li><a href="about.html">ABOUT</a></li>
-                        <li><a href="#contact">CONTACT</a></li>
+                        <li><a href="#contact-about">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div>
-            <div>
-                <h1>ABOUT ME</h1>
-            </div>
-        </div>
-        <div>
-            <div>
-                <picture>
-                    <source srcset="img/profile/img_profile@1x.jpg" media="(max-width:767px)">
-                    <img src="img/profile/img_profile@2x.jpg" alt="My Picture">
-                </picture>
-                <div>
-                    <div>
-                        <h2>I am Gillian King, a UI Designer based in Rockville, Maryland</h2>
-                        <p>Gravitation towards learning about people, culture, and nature has led me to live in six countries, on four continents. The journeys I have taken have taught me that underneath, we are all the same, with more connections than differences.
-                        </p>
-                        <p>My curiosity has led me to learn new skills like starting my own teaching company to most recently, retraining as a UI designer and creating user-centric design projects. I seek teams where we can create inclusive designs and have meaningful impact on people and the environment.
-                        </p>
-                        <p>When I am not designing, you will find me enjoying the outdoors, planning my next trip, or stalking Instagram foodie accounts to find my next meal out.
-                        </p>
-                        <a href="files/resume_gillian-king.pdf" target="_blank" class="button secondary">Resume</a>
+        <main>
+            <div id="about"> <!-- about me section -->
+                <div class="container">
+                    <h1>About Me</h1>
+                    <picture>
+                        <source srcset="img/profile/img_profile@1x.jpg" media="(max-width:767px)">
+                        <img src="img/profile/img_profile@2x.jpg" alt="My Picture">
+                    </picture>
+                    <div class="row">
+                        <div> <!-- About Gillian section -->
+                            <h2>I am Gillian King, a UI Designer based in Rockville, Maryland</h2>
+                            <p>Gravitation towards learning about people, culture, and nature has led me to live in six countries, on four continents. The journeys I have taken have taught me that underneath, we are all the same, with more connections than differences.
+                            </p>
+                            <p>My curiosity has led me to learn new skills like starting my own teaching company to most recently, retraining as a UI designer and creating user-centric design projects. I seek teams where we can create inclusive designs and have meaningful impact on people and the environment.
+                            </p>
+                            <p>When I am not designing, you will find me enjoying the outdoors, planning my next trip, or stalking Instagram foodie accounts to find my next meal out.
+                            </p>
+                            <div class="center"><a href="files/resume_gillian-king.pdf" target="_blank" class="button secondary">Resume</a></div>
+                        </div>
                     </div>
-                    <div>
-                        <h2>Skills and Tools</h2>
-                        <div>
+                    <div class="row">
+                        <div> <!-- Skills and tools section -->
+                            <h2>Skills and Tools</h2>
                             <div>
-                                <h3>Skills</h3>
-                                <ul>
-                                    <li>UI elements, patterns, and hierarchy</li>
-                                    <li>Design principles and heuristics</li>
-                                    <li>Wireframing and prototyping</li>
-                                    <li>Mobile app design</li>
-                                    <li>Using design systems</li>
-                                    <li>Responsive web design</li>
-                                    <li>Designing responsive grids</li>
-                                    <li>Interaction design and animation</li>
-                                    <li>Creating style guides</li>
-                                    <li>Building a cohesive brand</li>
-                                    <li>Designing symbols and iconography</li>
-                                    <li>UX fundamentals and user psychology</li>
-                                    <li>User research and user testing</li>
-                                    <li>Interpreting business requirements</li>
-                                </ul>
-                            </div>
-                            <div>
-                                <h3>Tools</h3>
-                                <ul>
-                                    <li>Sketch</li>
-                                    <li>Figma</li>
-                                    <li>Adobe XD</li>
-                                    <li>Invision</li>
-                                    <li>Familiar with HTML, CSS and JavaScript</li>
-                                </ul>
+                                <div>
+                                    <h3>Skills</h3>
+                                    <ul>
+                                        <li>UI elements, patterns, and hierarchy</li>
+                                        <li>Design principles and heuristics</li>
+                                        <li>Wireframing and prototyping</li>
+                                        <li>Mobile app design</li>
+                                        <li>Using design systems</li>
+                                        <li>Responsive web design</li>
+                                        <li>Designing responsive grids</li>
+                                        <li>Interaction design and animation</li>
+                                        <li>Creating style guides</li>
+                                        <li>Building a cohesive brand</li>
+                                        <li>Designing symbols and iconography</li>
+                                        <li>UX fundamentals and user psychology</li>
+                                        <li>User research and user testing</li>
+                                        <li>Interpreting business requirements</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3>Tools</h3>
+                                    <ul>
+                                        <li>Sketch</li>
+                                        <li>Figma</li>
+                                        <li>Adobe XD</li>
+                                        <li>Invision</li>
+                                        <li>HTML, CSS and JavaScript</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <footer id="contact">
-            <div>
+        </main>
+        <footer id="contact-about">
+            <div class="container">
                 <h2>LET'S TALK</h2>
                 <p>If you would like to know more about me, send me an email or reach me on my socials, I would love to hear from you!
                 </p>
                 <div>
                     <a href="mailto:gilliansking-at-gmail.com" class="button contact" target="_blank">Email me</a>
                 </div>
-                <div>
-                    <!--Social Media Layout and Placeholders-->
+                <!--Social Media Layout and Placeholders-->
+                <div class="row">
                     <a href="https://www.behance.net/gilliansking" target="_blank">
-                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
                             <title>Behance</title>
                             <g fill="none" fill-rule="evenodd">
                                 <g transform="translate(-0)" fill="#F6F6F0" fill-rule="nonzero">
@@ -116,7 +116,7 @@
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/gilliansking368/" target="_blank">
-                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
                             <title>LinkedIn</title>
                             <g fill="none" fill-rule="evenodd">
                                 <g transform="translate(-0)" fill="#F6F6F0" fill-rule="nonzero"><path d="m475.08 0h-438.15c-18.52 0-36.931 14.238-36.931 36.926v438.15c0 20.87 17.129 36.926 36.54 36.926h438.54c19.785 0 36.926-15.455 36.926-36.926v-438.62c0-17.609-14.241-36.457-36.926-36.457zm-282.66 375.41h-56.002v-160h56.002v160zm-28.001-184c-15.464 0-28.001-12.536-28.001-28.001 0-15.464 12.536-28.001 28.001-28.001s28.001 12.536 28.001 28.001c0 15.464-12.535 28-27.999 28.001h-0.001795zm212 184h-47.999v-77.959c0-18.594-2.0642-42.509-27.548-42.509-25.874 0-29.828 20.253-29.828 41.163v79.305h-46.624v-160h44.609v21.594h0.68746c6.6412-12.608 22.874-21.594 47.062-21.594 50.327 0 59.64 28.898 59.64 72.066v87.932z"/>
@@ -125,7 +125,7 @@
                         </svg>
                     </a>
                     <a href="https://www.instagram.com/gilly_moonchild/" target="_blank">
-                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
                             <title>Instagram</title>
                             <g fill="none" fill-rule="evenodd">
                                 <g transform="translate(0)" fill="#F6F6F0" fill-rule="nonzero">
@@ -142,4 +142,5 @@
                 </div>
             </div>
         </footer>
-</body></html>
+    </body>
+</html>

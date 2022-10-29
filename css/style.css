@@ -4,6 +4,10 @@ Primary Color (Beige): #F6F6F0;
 Secondary Color (Black): #191714;
 Accent Color (Brown): #B7A98E
 */
+* {
+  box-sizing: border-box;
+}
+
 body{
     background-color: #F6F6F0;
     font-family: 'Montserrat', sans-serif;
@@ -13,6 +17,8 @@ body{
     color: #191714;
 }
 
+/*fonts*/
+
 h1, h2, h3 {
     font-family: 'Bodoni Moda', serif;
     line-height: 1.2;
@@ -21,6 +27,8 @@ h1 {
     font-size: 1.7222em;
     font-weight: 900;
     letter-spacing: 0.0389em;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 h2 {
@@ -50,6 +58,8 @@ a {
     color: #191714;
     text-decoration: none; /* No underlining */
 }
+
+/*links*/
 
 a:hover {
     color: #B7A98E;
@@ -104,6 +114,7 @@ a:focus {
 }
 
 .button.contact {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #F6F6F0;
     color: #191714;
     font-weight: 600;
@@ -131,11 +142,13 @@ a:focus {
 }
 
 .button.secondary {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: transparent;
     color: #191714;
     text-transform: uppercase;
     font-weight: 600;
     border: 1.5px solid #191714;
+    margin: 24px;
 }
 
 .button.secondary:hover {
@@ -159,3 +172,227 @@ a:focus {
     color: #F6F6F0;
     text-decoration: none; 
 }
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 48px 0; /* 48px top and bottom, 0 left and right */
+}
+
+.center {
+    text-align: center;
+}
+
+.logo {
+    max-width: 70px;
+}
+
+header {
+    background-color: #F6F6F0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.39);
+    -moz-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.39);
+    box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.39);
+    padding: 10px 0;
+}
+
+nav > ul {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+}
+
+nav > ul > li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #191714;
+}
+
+nav > ul > li > a:hover {
+    color: #B7A98E;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav > ul > li > a:active { 
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    color: #191714;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    color: #B7A98E;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+main {
+  padding-top: 160px;
+  
+}
+
+/*Work Page*/
+
+#hero {
+    background-color: #191714;
+    color: #F6F6F0;
+    text-align: center;
+    padding: 80px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#work .row { padding-bottom: 48px; border-bottom: 1px solid #191714; 
+}
+
+#work h2 {
+    text-align: center;
+    padding: 24px 0;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #191714;
+    color: #F6F6F0;
+    text-align: center;
+    padding-top: 24px;
+    padding-right: 10px;
+    padding-bottom: 24px;
+    padding-left: 10px;
+    width: 100%;    
+}
+
+.socials {
+    max-width: 44px;
+    padding:0 8px;
+}
+
+/*About Page*/
+
+wildr-prototype
+
+
+#about .row { padding-bottom: 24px; 
+}
+
+#about h2 {
+    text-align: center;
+    padding: 24px 0;
+}
+
+footer {
+    background-color: #191714;
+    color: #F6F6F0;
+    text-align: center;
+    padding-top: 24px;
+    padding-right: 10px;
+    padding-bottom: 24px;
+    padding-left: 10px;
+    width: 100%;    
+}
+
+/*Wildr Page*/
+
+#hero-wildr {
+    background-color: #ffffff;
+    display: inline-block;
+    width: 100%;
+}
+
+#camping-apps {
+    background-color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#jtbd {
+    background-color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#user-flow {
+    background-color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#sketches {
+    background-color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#usability-testing {
+    background-color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#preference-testing {
+    background-color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#style-guide {
+    background-color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#responsive-design {
+    background-color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#desktop {
+    background-color: #485936;
+    color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#mobile-mockups {
+    background-color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#reflection {
+    background-color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+
+
+#wildr h2 {
+    text-align: center;
+    padding: 12px 0;
+}
+

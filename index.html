@@ -6,15 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,900&family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
         <meta charset="utf-8">
         <title>Gillian King UI Designer Maryland USA</title>
         <link href="img/favicon.ico" rel="shortcut icon">
     </head>
     <body>
         <header>
-            <div>
-               <svg version="1.1" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg"><title>Logo</title>
+            <div class="container">
+               <svg version="1.1" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" class="logo"><title>Logo</title>
                     <g fill="none" fill-rule="evenodd">
                         <circle cx="35" cy="35" r="34" stroke="#0B0B0B" stroke-width="2"/>
                         <g transform="translate(15.818 24.2)" fill="#0B0B0B" fill-rule="nonzero">
@@ -26,95 +26,98 @@
                 </svg>
                 <nav>
                     <ul>
-                        <li><a href="index.html">PROJECTS</a></li>
+                        <li><a href="index.html">WORK</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="#contact">CONTACT</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-        <div>
-            <div>
-                <h1>Hi! I’m Gillian King.</h1>
-                <span>Creator of user-focused UI and advocate for web accessibility.
-                </span>
-                <p>Made in London, UK; designing from Rockville, MD, USA.
-                </p>
-            </div>
-        </div>
-        <div>
-            <div>
-                <h2>PROJECTS</h2>
-                <div>
-                    <div>
-                        <picture>
-                            <source srcset="img/project_wildr/img_projects_wildr@1x.jpg" media="(max-width:767px)">
-                            <img src="img/project_wildr/img_projects_wildr@2x.jpg" alt="Project Wildr image">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>User-centric Design for Dispersed Campers</h3>
-                        <p>Research and design for a location-based responsive web app giving users a tool to find campgrounds in the wild.
-                        </p>
-                        <a href="wildr.html" class="button">VIEW PROJECT</a>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <picture>
-                            <source srcset="img/project_bantay/img_projects_bantay@1x.jpg" media="(max-width:767px)">
-                            <img src="img/project_bantay/img_projects_bantay@2x.jpg" alt="Project Bantay image">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>Simplifying Your Shopping Experience</h3>
-                        <p>An intuitive e-commerce responsive web app to use on-the-go.
-                        </p>
-                        <a></a>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <picture>
-                            <source srcset="img/project_the-green-fridge/img_projects_the-green-fridge@1x.jpg" media="(max-width:767px)">
-                            <img src="img/project_the-green-fridge/img_projects_the-green-fridge@2x.jpg" alt="Project The Green Fridge image">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>Reducing Food Waste Within Your Community</h3>
-                        <p>Designing for Android and iOS specific native apps.
-                        </p>
-                        <a href="#" class="button">VIEW PROJECT</a>
-                    </div>
-                </div>
-                <div>
-                    <div>
-                        <picture>
-                            <source srcset="img/project_jam-box/img_projects_jam-box@1x.jpg" media="(max-width:767px)">
-                            <img src="img/project_jam-box/img_projects_jam-box@2x.jpg" alt="Project Jam Box image">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>Creating a Vibe</h3>
-                        <p>A native app for all your favorite 80s music.
-                        </p>
-                        <a href="#" class="button">VIEW PROJECT</a>
-                    </div>
+        <!--Main Area-->
+		<main>
+            <div id="hero"> <!-- hero section -->
+                <div class="container">
+                    <h1>UI Designer</h1>
+                    <span>Hi, I’m Gillian King! Creator of user-focused UI and advocate for web accessibility.
+                    </span>
+                    <p>Made in London, England; designing from Rockville, Maryland.
+                    </p>
                 </div>
             </div>
-        </div>
+            <div id="work"> <!-- work section -->
+                <div class="container">
+                    <h2>Work</h2>
+                    <div class="row">
+                        <div>
+                            <picture>
+                                <source srcset="img/project_wildr/img_projects_wildr@1x.jpg" media="(max-width:767px)">
+                                <img src="img/project_wildr/img_projects_wildr@2x.jpg" alt="Project Wildr image">
+                            </picture>
+                        </div>
+                        <div>
+                            <h3>User-centric Design for Dispersed Campers</h3>
+                            <p>Research and design for a location-based responsive web app giving users a tool to find campgrounds in the wild.
+                            </p>
+                            <a href="wildr.html" class="button">VIEW PROJECT</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <picture>
+                                <source srcset="img/project_bantay/img_projects_bantay@1x.jpg" media="(max-width:767px)">
+                                <img src="img/project_bantay/img_projects_bantay@2x.jpg" alt="Project Bantay image">
+                            </picture>
+                        </div>
+                        <div>
+                            <h3>Simplifying Your Shopping Experience</h3>
+                            <p>An intuitive e-commerce responsive web app to use on-the-go.
+                            </p>
+                            <a href="#" class="button">VIEW PROJECT</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <picture>
+                                <source srcset="img/project_the-green-fridge/img_projects_the-green-fridge@1x.jpg" media="(max-width:767px)">
+                                <img src="img/project_the-green-fridge/img_projects_the-green-fridge@2x.jpg" alt="Project The Green Fridge image">
+                            </picture>
+                        </div>
+                        <div>
+                            <h3>Reducing Food Waste Within Your Community</h3>
+                            <p>Designing for Android and iOS specific native apps.
+                            </p>
+                            <a href="#" class="button">VIEW PROJECT</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <picture>
+                                <source srcset="img/project_jam-box/img_projects_jam-box@1x.jpg" media="(max-width:767px)">
+                                <img src="img/project_jam-box/img_projects_jam-box@2x.jpg" alt="Project Jam Box image">
+                            </picture>
+                        </div>
+                        <div>
+                            <h3>Creating a Vibe</h3>
+                            <p>A native app for all your favorite 80s music.
+                            </p>
+                            <a href="#" class="button">VIEW PROJECT</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
         <footer id="contact">
-            <div>
+            <div class="container">
                 <h2>LET'S TALK</h2>
                 <p>If you would like to know more about me, send me an email or reach me on my socials, I would love to hear from you!
                 </p>
                 <div>
                     <a href="mailto:gilliansking-at-gmail.com" class="button contact" target="_blank">Email me</a>
                 </div>
-                <div>
-                    <!--Social Media Layout and Placeholders-->
+                <!--Social Media Layout and Placeholders-->
+                <div class="row">
                     <a href="https://www.behance.net/gilliansking" target="_blank">
-                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
                             <title>Behance</title>
                             <g fill="none" fill-rule="evenodd">
                                 <g transform="translate(-0)" fill="#F6F6F0" fill-rule="nonzero">
@@ -126,7 +129,7 @@
                         </svg>
                     </a>
                     <a href="https://www.linkedin.com/in/gilliansking368/" target="_blank">
-                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials" >
                             <title>LinkedIn</title>
                             <g fill="none" fill-rule="evenodd">
                                 <g transform="translate(-0)" fill="#F6F6F0" fill-rule="nonzero"><path d="m475.08 0h-438.15c-18.52 0-36.931 14.238-36.931 36.926v438.15c0 20.87 17.129 36.926 36.54 36.926h438.54c19.785 0 36.926-15.455 36.926-36.926v-438.62c0-17.609-14.241-36.457-36.926-36.457zm-282.66 375.41h-56.002v-160h56.002v160zm-28.001-184c-15.464 0-28.001-12.536-28.001-28.001 0-15.464 12.536-28.001 28.001-28.001s28.001 12.536 28.001 28.001c0 15.464-12.535 28-27.999 28.001h-0.001795zm212 184h-47.999v-77.959c0-18.594-2.0642-42.509-27.548-42.509-25.874 0-29.828 20.253-29.828 41.163v79.305h-46.624v-160h44.609v21.594h0.68746c6.6412-12.608 22.874-21.594 47.062-21.594 50.327 0 59.64 28.898 59.64 72.066v87.932z"/>
@@ -135,7 +138,7 @@
                         </svg>
                     </a>
                     <a href="https://www.instagram.com/gilly_moonchild/" target="_blank">
-                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                        <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
                             <title>Instagram</title>
                             <g fill="none" fill-rule="evenodd">
                                 <g transform="translate(0)" fill="#F6F6F0" fill-rule="nonzero">
@@ -152,4 +155,5 @@
                 </div>
             </div>
         </footer>
-</body></html>
+    </body>
+</html>
