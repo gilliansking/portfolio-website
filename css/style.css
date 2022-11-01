@@ -11,7 +11,7 @@ Accent Color (Brown): #B7A98E
 body{
     background-color: #F6F6F0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px; /* Sets the font size to 16px */
+    font-size: 16px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
     line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
     color: #191714;
@@ -19,35 +19,36 @@ body{
 
 /*fonts*/
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Bodoni Moda', serif;
     line-height: 1.2;
 }
+
 h1 {
-    font-size: 1.7222em;
+    font-size: 1.728em;
     font-weight: 900;
-    letter-spacing: 0.0389em;
+    letter-spacing: 0.1331em;
     text-transform: uppercase;
     text-align: center;
 }
 
 h2 {
-    font-size: 1.4444em;
+    font-size: 1.44em;
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 0.0278em;
+    letter-spacing: 0.0994em;
 }
 
 h3 {
-    font-size: 1.1667em;
+    font-size: 1.2em;
     font-weight: 500;
-    letter-spacing: 0.0222em;
+    letter-spacing: 0.0831em;
 }
 
 h4 {
     font-size: 1em;
     font-weight: 400;
-    letter-spacing: 0.0111em;
+    letter-spacing: 0.075em;
 }
 
 img {
@@ -63,20 +64,17 @@ a {
 
 a:hover {
     color: #B7A98E;
-    font-weight: 700;
     text-decoration: none; /* Embolden when hovering over a link */
 }
 
 a:active { 
     color: #191714;
-    font-weight: 700; /* Embolden when link selected */
     text-decoration: none; 
 }
 
 a:hover,
 a:focus {
     color: #B7A98E;
-    font-weight: 700; /* Embolden when element is targeted by keyboard */
     text-decoration: none; 
 }
 
@@ -87,10 +85,10 @@ a:focus {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.0556em;
-    padding: 10px;
+    padding: 10px 20px;
     border-radius: 0px;
-    transition: 0.2s opacity;
     text-decoration: none;
+    transition: 0.5s color 0.2s opacity;
 }
 
 .button:hover {
@@ -119,6 +117,11 @@ a:focus {
     color: #191714;
     font-weight: 600;
     text-decoration: none;
+    margin-top: 0px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    transition: 0.5s color 0.2s opacity;
 }
     
 .button.contact:hover {
@@ -149,6 +152,7 @@ a:focus {
     font-weight: 600;
     border: 1.5px solid #191714;
     margin: 24px;
+    transition: 1s color 0.2s opacity;
 }
 
 .button.secondary:hover {
@@ -219,26 +223,27 @@ nav > ul > li > a {
 
 nav > ul > li > a:hover {
     color: #B7A98E;
-    font-weight: 700;
     text-decoration: none;
 }
 
 nav > ul > li > a:active { 
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     color: #191714;
-    font-weight: 700;
     text-decoration: none;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
     color: #B7A98E;
-    font-weight: 700;
     text-decoration: none;
 }
 
+.nav_active a {
+    font-weight: 700;
+}
+
 main {
-  padding-top: 160px;
+  padding-top: 152.5px;
   
 }
 
@@ -258,7 +263,7 @@ main {
 
 #work h2 {
     text-align: center;
-    padding: 24px 0;
+    padding-top: 24px;
 }
 
 /*Footer*/
@@ -275,21 +280,24 @@ footer {
 }
 
 .socials {
-    max-width: 44px;
-    padding:0 8px;
+    max-width: 32px;
+    padding: 0px;
+    margin: 8px;
+}
+
+.london-animation {
+    
 }
 
 /*About Page*/
 
 wildr-prototype
 
-
 #about .row { padding-bottom: 24px; 
 }
 
 #about h2 {
     text-align: center;
-    padding: 24px 0;
 }
 
 footer {
@@ -313,6 +321,37 @@ footer {
 
 #camping-apps {
     background-color: #ffffff;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#user-research {
+    background-color: #8C5423;
+    color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#user_craig {
+    background-color: #485936;
+    color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#user_kara {
+    background-color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#user_audrey {
+    background-color: #8C5423;
+    color: #eceeea;
     padding: 24px 0;
     display: inline-block;
     width: 100%;
@@ -361,6 +400,14 @@ footer {
 }
 
 #responsive-design {
+    background-color: #8C5423;
+    color: #eceeea;
+    padding: 24px 0;
+    display: inline-block;
+    width: 100%;
+}
+
+#tablet-mobile-view {
     background-color: #eceeea;
     padding: 24px 0;
     display: inline-block;
@@ -369,7 +416,7 @@ footer {
 
 #desktop {
     background-color: #485936;
-    color: #ffffff;
+    color: #eceeea;
     padding: 24px 0;
     display: inline-block;
     width: 100%;
@@ -389,10 +436,286 @@ footer {
     width: 100%;
 }
 
-
-
 #wildr h2 {
     text-align: center;
     padding: 12px 0;
 }
 
+@keyframes color-change {
+    0% {fill: #fdd21c;}
+    75% {fill: #f5a919;}
+    100% {fill: #f76414;}
+}
+
+.sun {
+    animation: 8s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+    animation: 17s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(200px, 48px);}
+  to {transform: translate(-200px, 48px);}
+}
+
+.cloud-back {
+    animation: 17s cloud-move-reverse infinite alternate linear;
+}
+
+@keyframes boat-move {
+    from {transform: translate(0,0);}
+    to {transform: translate(1600px,0);}
+}
+
+.boat-base {
+    animation: 30s boat-move infinite alternate linear;
+}
+
+.boat-sail {
+    animation: 30s boat-move infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+
+@media only screen and (min-width: 640px) {
+    
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    main {
+        padding-top: 110px;
+    }
+
+    body{
+        font-size: 18px;
+    }
+    
+    #hero span {
+        display: block;
+    }
+    
+    .col-md-6 {
+        width: 50%;
+    }
+    
+    .col-md-4 {
+        width: 33.3333333333%;
+    }
+ 
+    [class*="col-"] {
+        float: left;
+        padding: 0 10px;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    #about h3 {margin-top: 0;}
+    
+    #wildr h3 {margin-top: 0;}
+    
+    .socials {
+        max-width: 40px;
+        margin: 10px;
+    }
+    
+    # profile-picture {
+        margin: 0 120px;
+    }
+    
+    /*Wildr Page Medium Screens*/
+
+    #camping-apps {
+        padding: 68px 0;
+    }
+
+    #user-research {
+        padding: 68px 0;
+    }
+
+    #user_craig {
+        padding: 68px 0;
+    }
+
+    #user_kara {
+        padding: 68px 0;
+    }
+
+    #user_audrey {
+        padding: 68px 0;
+    }
+
+    #jtbd {
+        padding: 68px 0;
+    }
+
+    #user-flow {
+        padding: 68px 0;
+    }
+
+    #sketches {
+        padding: 68px 0;
+    }
+
+    #usability-testing {
+        padding: 68px 0;
+    }
+
+    #preference-testing {
+        padding: 68px 0;
+    }
+
+    #style-guide {
+        padding: 68px 0;
+    }
+
+    #responsive-design {
+        padding: 68px 0;
+    }
+
+    #tablet-mobile-view {
+        padding: 68px 0;
+    }
+
+    #desktop {
+        padding: 68px 0;
+    }
+
+    #mobile-mockups {
+        padding: 68px 0;
+    }
+
+    #reflection {
+        padding: 68px 0;
+    }
+    
+    
+    
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+
+    .col-lg-4 {
+        width: 33.3333333333%;
+    }
+    
+    .col-lg-5 {
+        width: 40%;
+    }
+    
+    .col-lg-7 {
+        width: 60%;
+    }
+ 
+    [class*="col-"] {
+        float: left;
+        padding: 0 10px;
+    }
+    
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    #about h3 {margin-top: 0;}
+    
+    #about h2 {text-align: left;}
+    
+    #wildr h3 {margin-top: 0;}
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .button.secondary {
+        display: inline-block;
+        
+    }
+    
+    /*Wildr Page Medium Screens*/
+
+    #camping-apps {
+        padding: 96px 0;
+    }
+
+    #user-research {
+        padding: 96px 0;
+    }
+
+    #jtbd {
+        padding: 96px 0;
+    }
+
+    #user-flow {
+        padding: 96px 0;
+    }
+
+    #sketches {
+        padding: 96px 0;
+    }
+
+    #usability-testing {
+        padding: 96px 0;
+    }
+
+    #preference-testing {
+        padding: 96px 0;
+    }
+
+    #style-guide {
+        padding: 96px 0;
+    }
+
+    #responsive-design {
+        padding: 96px 0;
+    }
+
+    #tablet-mobile-view {
+        padding: 96px 0;
+    }
+
+    #desktop {
+        padding: 96px 0;
+    }
+
+    #mobile-mockups {
+        padding: 96px 0;
+    }
+
+    #reflection {
+        padding: 96px 0;
+    }
+    
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+}

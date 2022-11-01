@@ -28,7 +28,7 @@
                 <nav>
                     <ul>
                         <li><a href="index.html">WORK</a></li>
-                        <li><a href="about.html">ABOUT</a></li>
+                        <li class="nav_active"><a href="about.html">ABOUT</a></li>
                         <li><a href="#contact-about">CONTACT</a></li>
                     </ul>
                 </nav>
@@ -38,12 +38,14 @@
             <div id="about"> <!-- about me section -->
                 <div class="container">
                     <h1>About Me</h1>
-                    <picture>
-                        <source srcset="img/profile/img_profile@1x.jpg" media="(max-width:767px)">
-                        <img src="img/profile/img_profile@2x.jpg" alt="My Picture">
-                    </picture>
+                    <div>
+                        <picture>
+                            <source srcset="img/profile/img_profile@1x.jpg" media="(max-width:767px)">
+                            <img src="img/profile/img_profile@2x.jpg" alt="My Picture">
+                        </picture>
+                    </div>    
                     <div class="row">
-                        <div> <!-- About Gillian section -->
+                        <div class="column col-lg-7"> <!-- About Gillian section -->
                             <h2>I am Gillian King, a UI Designer based in Rockville, Maryland</h2>
                             <p>Gravitation towards learning about people, culture, and nature has led me to live in six countries, on four continents. The journeys I have taken have taught me that underneath, we are all the same, with more connections than differences.
                             </p>
@@ -54,11 +56,11 @@
                             <div class="center"><a href="files/resume_gillian-king.pdf" target="_blank" class="button secondary">Resume</a></div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row" "column col-lg-5">
                         <div> <!-- Skills and tools section -->
                             <h2>Skills and Tools</h2>
-                            <div>
-                                <div>
+                            <div id="skills-tools" class="row">
+                                <div class="column col-md-6 col-lg-5">
                                     <h3>Skills</h3>
                                     <ul>
                                         <li>UI elements, patterns, and hierarchy</li>
@@ -77,7 +79,7 @@
                                         <li>Interpreting business requirements</li>
                                     </ul>
                                 </div>
-                                <div>
+                                <div class="column col-md-6 col-lg-5">
                                     <h3>Tools</h3>
                                     <ul>
                                         <li>Sketch</li>
@@ -102,7 +104,7 @@
                     <a href="mailto:gilliansking-at-gmail.com" class="button contact" target="_blank">Email me</a>
                 </div>
                 <!--Social Media Layout and Placeholders-->
-                <div class="row">
+                <div>
                     <a href="https://www.behance.net/gilliansking" target="_blank">
                         <svg version="1.1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
                             <title>Behance</title>
