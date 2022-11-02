@@ -441,6 +441,8 @@ footer {
     padding: 12px 0;
 }
 
+/*CSS Animation*/
+
 @keyframes color-change {
     0% {fill: #fdd21c;}
     75% {fill: #f5a919;}
@@ -457,7 +459,7 @@ footer {
 }
 
 .cloud-front {
-    animation: 17s cloud-move infinite alternate linear;
+    animation: 12s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
@@ -466,7 +468,7 @@ footer {
 }
 
 .cloud-back {
-    animation: 17s cloud-move-reverse infinite alternate linear;
+    animation: 12s cloud-move-reverse infinite alternate linear;
 }
 
 @keyframes boat-move {
@@ -481,6 +483,88 @@ footer {
 .boat-sail {
     animation: 30s boat-move infinite alternate linear;
 }
+
+@keyframes palm1-move {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(0.4deg);}
+}
+
+.palm1 {
+    animation: 2s palm1-move infinite alternate linear;
+}
+
+@keyframes palm1-lines-move {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(0.4deg);}
+}
+
+.palm1-lines {
+    animation: 2s palm1-lines-move infinite alternate linear;
+}
+
+@keyframes palm2-move {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(0.5deg);}
+}
+
+.palm-2 {
+    animation: 2s palm2-move infinite alternate linear;
+}
+
+@keyframes palm2-lines-move {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(0.5deg);}
+}
+
+.palm2-lines {
+    animation: 2s palm2-lines-move infinite alternate linear;
+}
+
+@keyframes palm3-move {
+    from {transform: skewY(0deg);}
+    to {transform: skewY(1deg);}
+}
+
+.palm3 {
+    animation: 2s palm3-move infinite alternate linear;
+}
+
+@keyframes palm3-lines-move {
+    from {transform: skewY(0deg);}
+    to {transform: skewY(1deg);}
+}
+
+.palm3-lines {
+    animation: 2s palm3-lines-move infinite alternate linear;
+}
+
+@keyframes palm4-move {
+    from {
+        transform: skewY(1deg);
+        transform-origin: 100% -30%;
+    }
+    to {
+        transform: skewY(0deg);
+    }
+}
+.palm4 {
+    animation: 2s palm4-move infinite alternate linear;
+}
+
+@keyframes palm4-lines-move {
+    from {
+        transform: skewY(0.5deg);
+        transform-origin: 100% -30%;
+    }
+    to {
+        transform: skewY(0deg);
+    }
+}
+
+.palm4-lines {
+    animation: 6s palm4-lines-move infinite alternate linear;
+}
+
 
 /* ==============================
 Medium devices (640px and larger)
@@ -539,8 +623,8 @@ Medium devices (640px and larger)
         margin: 10px;
     }
     
-    # profile-picture {
-        margin: 0 120px;
+    #my-profile.img {
+        width: 50%;
     }
     
     /*Wildr Page Medium Screens*/
@@ -609,7 +693,7 @@ Medium devices (640px and larger)
         padding: 68px 0;
     }
     
-    
+    width 50% 
     
 }
 
