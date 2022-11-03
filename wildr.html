@@ -11,7 +11,7 @@
         <title>Responsive Web App Design</title>
         <link href="img/favicon.ico" rel="shortcut icon">
     </head>
-    <body>
+    <body id="wildr">
         <header>
             <div>
                 <div class="container">
@@ -36,8 +36,8 @@
                 </div>
             </div>
         </header>
-        <main>
-            <div id="wildr">
+        <main id="wildr-main">
+            <div>
                 <div id= "hero-wildr">
                     <picture>
                         <source srcset="img/project_wildr/img_wildr_1-cover@1x.jpg" media="(max-width:767px)">
@@ -202,15 +202,15 @@
                             </div>
                         </div>
                     </div>
-                </div>        
+                </div>    
                 <div id="jtbd"> <!-- Jobs to be done section -->
                     <div class="container">
                         <h2>JOBS TO BE DONE</h2>
-                        <div>
-                            <p>I created five jobs to be done based on the user personas. Users' goals, entry point, success criteria, and tasks involved were also defined. The sixth job to be done was added after I realized I was missing a vital functionality during the usability tests at a later stage.
+                        <div class="col-md-6">
+                            <p>I created five jobs to be done based on the user personas. Users' goals, entry point, success criteria, and tasks involved were also defined. The sixth job to be done was added after realizing a vital functionality was missing during the usability tests at a later stage.
                             </p>
                         </div>
-                        <div>
+                        <div class="col-md-6">
                             <ol>
                                 <li>Find campsites based on the users’ criteria</li>
                                 <li>See search results listed and on a map</li>
@@ -232,7 +232,8 @@
                     </div>
                 </div>
                 <div id="sketches"> <!-- Exploratory sketching section -->
-                    <div class="container">   
+                    <div class="container">  
+                        
                         <h2>EXPLORATORY SKETCHING</h2>
                         <h3>Low-fidelity Wireframes</h3>
                         <p>I used the Crazy 8s rapid exploratory sketching method to create low fidelity wireframes. The images showcase different layouts of screens. After refining some of these sketches, I put together a prototype and conducted usability tests on potential users
@@ -246,25 +247,34 @@
                 <div id="usability-testing"> <!-- Usability testing section -->
                     <div class="container">
                         <h2>USABILITY TESTING</h2>
-                        <h3>Aim of Testing</h3>
-                        <p>I created a rapid prototype and tested these on three participants. The aim was to get user feedback early in the project and ensure the features and flow worked for the user.
-                        </p>
-                        <div class="center"><a href="https://gillianking336531.invisionapp.com/console/share/MVXFGW8S2CA/905487867" target="_blank" class="button secondary">Rapid Prototype Link</a></div>
-                        <br>
-                        <h3>Results Synthesis and Error Rating</h3>
-                        <p>Table shows errors during usability testing, error ratings showinging severity of the issues, and proposed solutions for my designs.
-                        </p>
-                        <picture>
-                            <source srcset="img/project_wildr/img_wildr_7-table@1x.jpg" media="(max-width:767px)">
-                            <img src="img/project_wildr/img_wildr_7-table@2x.jpg" alt="Results Table">
-                        </picture>
-                        <h3>Outcome</h3>
-                        <p>This sample of mid-fidelity wireframes show suggestions from the table above applied.
-                        </p>
-                        <picture>
-                            <source srcset="img/project_wildr/img_wildr_8-mid-fidelity@1x.jpg" media="(max-width:767px)">
-                            <img src="img/project_wildr/img_wildr_8-mid-fidelity@2x.jpg" alt="Mid-fidelity Wireframes">
-                        </picture>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h3>Aim of Testing</h3>
+                                <p>I created a rapid prototype and tested these on three participants. The aim was to get user feedback early in the project and ensure the features and flow worked for the user.
+                                </p>
+                                <div class="center"><a href="https://gillianking336531.invisionapp.com/console/share/MVXFGW8S2CA/905487867" target="_blank" class="button secondary">Rapid Prototype Link</a></div>
+                            </div>
+                            <div class="col-md-6">
+                                <h3>Results Synthesis and Error Rating</h3>
+                                <p>Table shows errors during usability testing, error ratings showinging severity of the issues, and proposed solutions for my designs.
+                                </p>
+                            </div>
+                        </div>
+                        <div>
+                            <picture>
+                                <source srcset="img/project_wildr/img_wildr_7-table@1x.jpg" media="(max-width:767px)">
+                                <img src="img/project_wildr/img_wildr_7-table@2x.jpg" alt="Results Table">
+                            </picture>
+                        </div>
+                        <div>
+                            <h3>Outcome</h3>
+                            <p>This sample of mid-fidelity wireframes show suggestions from the table above applied.
+                            </p>
+                            <picture>
+                                <source srcset="img/project_wildr/img_wildr_8-mid-fidelity@1x.jpg" media="(max-width:767px)">
+                                <img src="img/project_wildr/img_wildr_8-mid-fidelity@2x.jpg" alt="Mid-fidelity Wireframes">
+                            </picture>
+                        </div>
                     </div>
                 </div>
                 <div id="preference-testing"> <!-- A/B preference testing section -->
@@ -351,10 +361,10 @@
                 </div>
             </div>
         </main>
-        <footer id="contact-wildr">
+        <footer id="contact">
             <div class="container">
                 <h2>LET'S TALK</h2>
-                <p>If you would like to know more about me, send me an email or reach me on my socials, I would love to hear from you!
+                <p style="text-align: center;">If you would like to know more about me, send me an email or reach me on my socials, I would love to hear from you!
                 </p>
                 <div>
                     <a href="mailto:gilliansking-at-gmail.com" class="button contact" target="_blank">Email me</a>
