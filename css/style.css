@@ -151,7 +151,7 @@ a:focus {
     text-transform: uppercase;
     font-weight: 600;
     border: 1.5px solid #191714;
-    margin: 24px;
+    margin: 24px 0;
     transition: 1s color 0.2s opacity;
 }
 
@@ -443,14 +443,16 @@ footer {
 
 /*CSS Animation*/
 
-@keyframes color-change {
+@keyframes sun-change {
     0% {fill: #fdd21c;}
-    75% {fill: #f5a919;}
+    40% {fill: #f5a919;}
     100% {fill: #f76414;}
+    from {transform: translate(50,0px);}
+    to {transform: translate(0px,880px);}
 }
 
 .sun {
-    animation: 8s color-change infinite alternate linear;
+    animation: 30s sun-change infinite alternate linear;
 }
 
 @keyframes cloud-move {
@@ -693,8 +695,17 @@ Medium devices (640px and larger)
         padding: 68px 0;
     }
     
-    width 50% 
+    #wildr-main p {
+        max-width: 600px
+    }
     
+    #about img {
+        width: 50%;
+        display: block;
+        margin-left: auto;  
+        margin-right: auto;  
+        padding: 12px;
+    }
 }
 
 /* ==============================
@@ -737,12 +748,15 @@ Large devices (1024px or larger)
         margin-right: auto;
     }
     
-    .button.secondary {
-        display: inline-block;
-        
+    #about .center {
+        text-align: left;
     }
     
-    /*Wildr Page Medium Screens*/
+    #usability-testing .center {
+        text-align: left;
+    }
+    
+    /*Wildr Page Larger Screens*/
 
     #camping-apps {
         padding: 96px 0;
@@ -796,7 +810,14 @@ Large devices (1024px or larger)
         padding: 96px 0;
     }
     
-}
+    #contact p {
+        text-align: center;
+    }
+    
+    #wildr-main p {
+        max-width: 600px
+    }
+
 
 /* ==============================
 X-large devices (1440px or larger)
