@@ -242,9 +242,8 @@ nav > ul > li > a:focus {
     display: none;
 }
 
-.navtoggle,
-.navtoggle.responsive {
-    position: relative;
+.navtoggle, .navtoggle.responsive {
+  position: relative;
 }
 
 .navtoggle li .icon {
@@ -254,6 +253,11 @@ nav > ul > li > a:focus {
     font-size: 20px;
     padding-right: 0;
 }
+
+
+
+
+
 
 .navtoggle.responsive li {
     display: block;
@@ -631,6 +635,12 @@ Medium devices (640px and larger)
     .navtoggle li:last-child {
         display: none;
     }
+    
+    
+    
+    
+    
+    
     
     nav > ul > li > a {
         padding-right: 16px;

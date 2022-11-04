@@ -7,3 +7,4 @@ function menuToggle() {
   } else {
     x.className = 'navtoggle';
   }
+}
