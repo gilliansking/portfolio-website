@@ -4,10 +4,20 @@ Primary Color (Beige): #F6F6F0;
 Secondary Color (Black): #191714;
 Accent Color (Brown): #B7A98E
 */
+
+
+
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
   box-sizing: border-box;
 }
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*default body settings*/
 body{
     background-color: #F6F6F0;
     font-family: 'Montserrat', sans-serif;
@@ -39,6 +49,15 @@ h2 {
     letter-spacing: 0.0994em;
 }
 
+#work h2 {
+    text-align: center;
+    padding-top: 24px;
+}
+
+#about h2 {
+    text-align: center;
+}
+
 h3 {
     font-size: 1.2em;
     font-weight: 500;
@@ -51,20 +70,24 @@ h4 {
     letter-spacing: 0.075em;
 }
 
+/*setting images to full-width*/
 img {
     width: 100%;
 }
 
+.center {
+  text-align: center;
+}
+
+/*links*/
 a {
     color: #191714;
     text-decoration: none; /* No underlining */
 }
 
-/*links*/
-
 a:hover {
     color: #B7A98E;
-    text-decoration: none; /* Embolden when hovering over a link */
+    text-decoration: none;
 }
 
 a:active { 
@@ -78,6 +101,12 @@ a:focus {
     text-decoration: none; 
 }
 
+/*style the current nav item*/
+.nav_active a {
+    font-weight: 700;
+}
+
+/*CSS code for the button class*/
 .button {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #191714;
@@ -111,19 +140,21 @@ a:focus {
     text-decoration: none;
 }
 
+/*button rules for the mailto button*/
 .button.contact {
     display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #F6F6F0;
     color: #191714;
     font-weight: 600;
     text-decoration: none;
-    margin-top: 0px;
-    margin-right: 12px;
-    margin-bottom: 12px;
-    margin-left: 12px;
+    margin-top: 12px;
+    margin-right: 24px;
+    margin-bottom: 32px;
+    margin-left: 24px;
     transition: 0.5s color 0.2s opacity;
 }
-    
+
+/*button class hover and active state*/
 .button.contact:hover {
     background-color: #B7A98E;
     font-weight: 600;
@@ -177,22 +208,12 @@ a:focus {
     text-decoration: none; 
 }
 
-.container {
-    padding: 0 15px;
-}
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*style the page sections*/
 
-.row {
-    margin: 48px 0; /* 48px top and bottom, 0 left and right */
-}
 
-.center {
-    text-align: center;
-}
-
-.logo {
-    max-width: 60px;
-}
-
+/*style the <header> element*/
 header {
     background-color: #F6F6F0;
     position: fixed;
@@ -200,9 +221,18 @@ header {
     -webkit-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.39);
     -moz-box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.39);
     box-shadow: 0px 1px 6px 0px rgba(50, 50, 50, 0.39);
-    padding: 8px 0 2px;
+    padding: 10px 0 2px;
+    display: block;
 }
 
+/*style the logo*/
+.logo {
+    max-width: 50px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/*Navigation Styling*/
 nav > ul {
     list-style-type: none;
     padding: 0;
@@ -210,8 +240,7 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    padding-top: 14px;
-    padding-bottom: 16px;
+    padding: 0 16px;
     text-transform: uppercase;
     font-weight: 400;
     color: #191714;
@@ -223,7 +252,7 @@ nav > ul > li > a:hover {
 }
 
 nav > ul > li > a:active { 
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    opacity: 0.8; 
     color: #191714;
     text-decoration: none;
 }
@@ -234,16 +263,12 @@ nav > ul > li > a:focus {
     text-decoration: none;
 }
 
-.nav_active a {
-    font-weight: 700;
-}
-
 .navtoggle li:not(:last-child) {
     display: none;
 }
 
 .navtoggle, .navtoggle.responsive {
-  position: relative;
+    position: relative;
 }
 
 .navtoggle li .icon {
@@ -252,31 +277,29 @@ nav > ul > li > a:focus {
     top: 2px;
     font-size: 20px;
     padding-right: 0;
+    padding-top: 20px;
+    padding-bottom: 16px;
 }
-
-
-
-
-
 
 .navtoggle.responsive li {
     display: block;
 }
 
 .navtoggle.responsive nav {
-    padding: 24px 0 0;
+  padding: 12px 0 0;
 }
 
-.navtoggle.responsive li {
-    display: block;
-    padding: 10px 0;
-    border-top: 1px solid #191714;
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid #191714;
 }
 
 .navtoggle.responsive li:last-child {
     padding: 0 0 10px;
 }
 
+/*for lists*/
 ul {
     padding-left: 20px;
 }
@@ -284,8 +307,6 @@ ul {
 main {
   padding-top: 76px;
 }
-
-/*Work Page*/
 
 #hero {
     background-color: #191714;
@@ -296,16 +317,7 @@ main {
     width: 100%;
 }
 
-#work .row { padding-bottom: 48px; border-bottom: 1px solid #191714; 
-}
-
-#work h2 {
-    text-align: center;
-    padding-top: 24px;
-}
-
 /*Footer*/
-
 footer {
     background-color: #191714;
     color: #F6F6F0;
@@ -316,6 +328,7 @@ footer {
     padding-left: 10px;
     width: 100%;    
 }
+
 
 .socials {
     max-width: 32px;
@@ -323,28 +336,24 @@ footer {
     margin: 8px;
 }
 
-/*About Page*/
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/* Layout styling */
+.container {
+    padding: 0 15px;
+}
 
-wildr-prototype
+.row {
+    margin: 48px 0; /* 48px top and bottom, 0 left and right */
+}
+
+#work .row { padding-bottom: 48px; border-bottom: 1px solid #191714; 
+}
 
 #about .row { padding-bottom: 24px; 
 }
-
-#about h2 {
-    text-align: center;
-}
-
-footer {
-    background-color: #191714;
-    color: #F6F6F0;
-    text-align: center;
-    padding-top: 24px;
-    padding-right: 10px;
-    padding-bottom: 24px;
-    padding-left: 10px;
-    width: 100%;    
-}
-
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
 /*Wildr Page*/
 
 #hero-wildr {
@@ -474,9 +483,9 @@ footer {
     text-align: center;
     padding: 12px 0;
 }
-
-/*CSS Animation*/
-
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*css animation*/
 @keyframes sun-change {
     0% {fill: #fdd21c;}
     40% {fill: #f5a919;}
@@ -601,32 +610,63 @@ footer {
     animation: 6s palm4-lines-move infinite alternate linear;
 }
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
 
+/*clear page flow*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*float all columns left*/
+[class*="col-"] {
+        padding: 0 10px;
+    }
+    
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-
 @media only screen and (min-width: 640px) {
+    body {
+        font-size: 18px;
+    }
     
     header {
+        display: inline-block;
         text-align: right;
-        padding: 20px 0 13px;
-    }
-
-    nav {
         min-width: 640px;
-        float: right;
+        padding: 8px 0;
+    }
+    
+    .logo {
+        max-width: 50px;
+        float: left;
+        padding: 16px 0;
+    }
+    
+    nav {
+        display: inline-block;
+        float: auto;
         margin-top: 0px;
     }
     
     nav > ul {
         margin: 1em 0;
-        padding: 0 16px;
+        padding: 15px 16px;
     }
     
-     nav > ul > li {
+    nav > ul > li {
         display: inline-block;
     }
+    
+    nav > ul > li > a {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+    
     
     .navtoggle li:not(:last-child) {
         display: inline-block;
@@ -634,57 +674,42 @@ Medium devices (640px and larger)
     
     .navtoggle li:last-child {
         display: none;
+        padding: none;
     }
-    
-    
-    
-    
-    
-    
-    
-    nav > ul > li > a {
-        padding-right: 16px;
-        padding-left: 16px;
+
+    .navtoggle.responsive li {
+        padding: 0 0;
+        border-top: none;
     }
     
     last-child {
         display: none;
     }
-
-    .logo {
-        max-width: 60px;
-        float: left
-    }
     
+    .navtoggle.responsive nav {
+        padding: 0 0 0;
+    }
+
+
+    /* nav .navtoggle li:last-child {
+        display: none;
+        border-top: none;
+    } */
+
+
     main {
-        padding-top: 96px;
-    }
-
-    body{
-        font-size: 18px;
-    }
-    
-    #hero span {
-        display: block;
+        padding-top: 109px;
     }
     
     .col-md-6 {
         width: 50%;
+        float: left;
+        padding-bottom: 40px;
     }
     
     .col-md-4 {
         width: 33.3333333333%;
-    }
- 
-    [class*="col-"] {
         float: left;
-        padding: 0 10px;
-    }
-    
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
     }
     
     #about h3 {margin-top: 0;}
@@ -783,50 +808,60 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    col-lg-7 {
+        width: 60%;
+    }
 
     .col-lg-4 {
         width: 33.3333333333%;
+        float: left;
     }
     
     .col-lg-5 {
         width: 40%;
     }
-    
-    .col-lg-7 {
-        width: 60%;
-    }
-    
+
     .col-lg-st-5 {
         width: 100%;
     }
- 
-    [class*="col-"] {
+    
+    .col-lg-7 {
+        width: 60%;
         float: left;
-        padding: 0 10px;
+        padding-bottom: 40px;
     }
     
-    .row::after {
-        content: "";
-        clear: both;
-        display: table;
+    .col-lg-8 {
+        width: 40%;
+        float: right;
+    }
+    
+    #about-page .col-md-6 {
+        width: 100%;
     }
     
     #about h3 {margin-top: 0;}
     
-    #about h2 {text-align: left;}
+    #about-main h2 {text-align: left;}
     
     #wildr h3 {margin-top: 0;}
 
     #container {
-        max-width: 1400px;
+        max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     #about .center {
         text-align: left;
     }
-    
+   
     #usability-testing .center {
         text-align: left;
     }
