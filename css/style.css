@@ -11,25 +11,31 @@ Accent Color (Brown): #B7A98E
 
 /*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 
 /*default body settings*/
-body{
+body {
     background-color: #F6F6F0;
     font-family: 'Montserrat', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
-    font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.5; /* Sets the line-height to 1.5 * the font-size */
+    font-size: 16px;
+    /* Sets the font size to 16px */
+    font-weight: 300;
+    /* Sets the font weight to 300 */
+    line-height: 1.5;
+    /* Sets the line-height to 1.5 * the font-size */
     color: #191714;
 }
 
 /*fonts*/
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Bodoni Moda', serif;
     line-height: 1.2;
 }
@@ -76,29 +82,30 @@ img {
 }
 
 .center {
-  text-align: center;
+    text-align: center;
 }
 
 /*links*/
 a {
     color: #191714;
-    text-decoration: none; /* No underlining */
+    text-decoration: none;
+    /* No underlining */
 }
 
 a:hover {
-    color: #B7A98E;
+    color: #946811;
     text-decoration: none;
 }
 
-a:active { 
+a:active {
     color: #191714;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 a:hover,
 a:focus {
-    color: #B7A98E;
-    text-decoration: none; 
+    color: #946811;
+    text-decoration: none;
 }
 
 /*style the current nav item*/
@@ -108,9 +115,11 @@ a:focus {
 
 /*CSS code for the button class*/
 .button {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #191714;
-    color: #F6F6F0; /* needed to override the default link color */
+    color: #F6F6F0;
+    /* needed to override the default link color */
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.0556em;
@@ -121,28 +130,32 @@ a:focus {
 }
 
 .button:hover {
-    color: #B7A98E;
+    background-color: transparent;
+	color: #946811;
     font-weight: 600;
+	border: 1.5px solid #191714;
     text-decoration: none;
 }
 
-.button:active { 
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    color: #B7A98E;
+.button:active {
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
+    color: #946811;
     font-weight: 600;
     text-decoration: none;
 }
 
 .button:hover,
 .button:focus {
-    color: #B7A98E;
+    color: #946811;
     font-weight: 600;
     text-decoration: none;
 }
 
 /*button rules for the mailto button*/
 .button.contact {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #F6F6F0;
     color: #191714;
     font-weight: 600;
@@ -156,27 +169,32 @@ a:focus {
 
 /*button class hover and active state*/
 .button.contact:hover {
-    background-color: #B7A98E;
+    background-color: #F6F6F0;
+	color: #946811;
     font-weight: 600;
     text-decoration: none;
 }
 
-.button.contact:active { 
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
-    background-color: #B7A98E;
+.button.contact:active {
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
+    background-color: #F6F6F0;
+	color: #946811;
     font-weight: 600;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .button.contact:hover,
 .button.contact:focus {
-    background-color: #B7A98E;
+    background-color: #F6F6F0;
+	color: #946811;
     font-weight: 600;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .button.secondary {
-    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    display: inline-block;
+    /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: transparent;
     color: #191714;
     text-transform: uppercase;
@@ -193,19 +211,20 @@ a:focus {
     text-decoration: none;
 }
 
-.button.secondary:active { 
-    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+.button.secondary:active {
+    opacity: 0.8;
+    /* Reduces the opacity of the button to 80% */
     background-color: #191714;
     color: #F6F6F0;
     font-weight: 600;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .button.secondary:hover,
 .button.secondary:focus {
     background-color: #191714;
     color: #F6F6F0;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -247,19 +266,19 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:hover {
-    color: #B7A98E;
+    color: #946811;
     text-decoration: none;
 }
 
-nav > ul > li > a:active { 
-    opacity: 0.8; 
+nav > ul > li > a:active {
+    opacity: 0.8;
     color: #191714;
     text-decoration: none;
 }
 
 nav > ul > li > a:hover,
 nav > ul > li > a:focus {
-    color: #B7A98E;
+    color: #946811;
     text-decoration: none;
 }
 
@@ -267,7 +286,8 @@ nav > ul > li > a:focus {
     display: none;
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
     position: relative;
 }
 
@@ -286,13 +306,13 @@ nav > ul > li > a:focus {
 }
 
 .navtoggle.responsive nav {
-  padding: 12px 0 0;
+    padding: 12px 0 0;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-  padding: 10px 0;
-  border-top: 1px solid #191714;
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #191714;
 }
 
 .navtoggle.responsive li:last-child {
@@ -305,7 +325,7 @@ ul {
 }
 
 main {
-  padding-top: 100px;
+    padding-top: 100px;
 }
 
 #hero {
@@ -326,7 +346,7 @@ footer {
     padding-right: 10px;
     padding-bottom: 24px;
     padding-left: 10px;
-    width: 100%;    
+    width: 100%;
 }
 
 
@@ -344,14 +364,19 @@ footer {
 }
 
 .row {
-    margin: 48px 0; /* 48px top and bottom, 0 left and right */
+    margin: 48px 0;
+    /* 48px top and bottom, 0 left and right */
 }
 
-#work .row { padding-bottom: 48px; border-bottom: 1px solid #191714; 
+#work .row {
+    padding-bottom: 48px;
+    border-bottom: 1px solid #191714;
 }
 
-#about .row { padding-bottom: 24px; 
+#about .row {
+    padding-bottom: 24px;
 }
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*Wildr Page*/
@@ -483,15 +508,30 @@ footer {
     text-align: center;
     padding: 12px 0;
 }
+
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*css animation*/
 @keyframes sun-change {
-    0% {fill: #fdd21c;}
-    40% {fill: #f5a919;}
-    100% {fill: #f76414;}
-    from {transform: translate(50,0px);}
-    to {transform: translate(0px,880px);}
+    0% {
+        fill: #fdd21c;
+    }
+
+    40% {
+        fill: #f5a919;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+
+    from {
+        transform: translate(50, 0px);
+    }
+
+    to {
+        transform: translate(0px, 880px);
+    }
 }
 
 .sun {
@@ -499,8 +539,13 @@ footer {
 }
 
 @keyframes cloud-move {
-    from {transform: translate(0,50px);}
-    to {transform: translate(200px,50px);}
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
 }
 
 .cloud-front {
@@ -508,8 +553,13 @@ footer {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(200px, 48px);}
-  to {transform: translate(-200px, 48px);}
+    from {
+        transform: translate(200px, 48px);
+    }
+
+    to {
+        transform: translate(-200px, 48px);
+    }
 }
 
 .cloud-back {
@@ -517,8 +567,13 @@ footer {
 }
 
 @keyframes boat-move {
-    from {transform: translate(0,0);}
-    to {transform: translate(1600px,0);}
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(1600px, 0);
+    }
 }
 
 .boat-base {
@@ -530,8 +585,13 @@ footer {
 }
 
 @keyframes palm1-move {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(0.4deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0.4deg);
+    }
 }
 
 .palm1 {
@@ -539,8 +599,13 @@ footer {
 }
 
 @keyframes palm1-lines-move {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(0.4deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0.4deg);
+    }
 }
 
 .palm1-lines {
@@ -548,8 +613,13 @@ footer {
 }
 
 @keyframes palm2-move {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(0.5deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0.5deg);
+    }
 }
 
 .palm-2 {
@@ -557,8 +627,13 @@ footer {
 }
 
 @keyframes palm2-lines-move {
-    from {transform: rotate(0deg);}
-    to {transform: rotate(0.5deg);}
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0.5deg);
+    }
 }
 
 .palm2-lines {
@@ -566,8 +641,13 @@ footer {
 }
 
 @keyframes palm3-move {
-    from {transform: skewY(0deg);}
-    to {transform: skewY(1deg);}
+    from {
+        transform: skewY(0deg);
+    }
+
+    to {
+        transform: skewY(1deg);
+    }
 }
 
 .palm3 {
@@ -575,8 +655,13 @@ footer {
 }
 
 @keyframes palm3-lines-move {
-    from {transform: skewY(0deg);}
-    to {transform: skewY(1deg);}
+    from {
+        transform: skewY(0deg);
+    }
+
+    to {
+        transform: skewY(1deg);
+    }
 }
 
 .palm3-lines {
@@ -588,10 +673,12 @@ footer {
         transform: skewY(1deg);
         transform-origin: 100% -30%;
     }
+
     to {
         transform: skewY(0deg);
     }
 }
+
 .palm4 {
     animation: 2s palm4-move infinite alternate linear;
 }
@@ -601,6 +688,7 @@ footer {
         transform: skewY(0.5deg);
         transform-origin: 100% -30%;
     }
+
     to {
         transform: skewY(0deg);
     }
@@ -623,9 +711,9 @@ footer {
 
 /*float all columns left*/
 [class*="col-"] {
-        padding: 0 10px;
-    }
-    
+    padding: 0 10px;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
@@ -633,45 +721,45 @@ Medium devices (640px and larger)
     body {
         font-size: 18px;
     }
-    
+
     header {
         display: inline-block;
         text-align: right;
         min-width: 640px;
         padding: 8px 0;
     }
-    
+
     .logo {
         max-width: 50px;
         float: left;
         padding: 16px 0;
     }
-    
+
     nav {
         display: inline-block;
         float: auto;
         margin-top: 0px;
     }
-    
+
     nav > ul {
         margin: 1em 0;
         padding: 15px 16px;
     }
-    
+
     nav > ul > li {
         display: inline-block;
     }
-    
+
     nav > ul > li > a {
         padding-right: 16px;
         padding-left: 16px;
     }
-    
-    
+
+
     .navtoggle li:not(:last-child) {
         display: inline-block;
     }
-    
+
     .navtoggle li:last-child {
         display: none;
         padding: none;
@@ -681,11 +769,11 @@ Medium devices (640px and larger)
         padding: 0 0;
         border-top: none;
     }
-    
+
     last-child {
         display: none;
     }
-    
+
     .navtoggle.responsive nav {
         padding: 0 0 0;
     }
@@ -700,31 +788,35 @@ Medium devices (640px and larger)
     main {
         padding-top: 109px;
     }
-    
+
     .col-md-6 {
         width: 50%;
         float: left;
         padding-bottom: 40px;
     }
-    
+
     .col-md-4 {
         width: 33.3333333333%;
         float: left;
     }
-    
-    #about h3 {margin-top: 0;}
-    
-    #wildr h3 {margin-top: 0;}
-    
+
+    #about h3 {
+        margin-top: 0;
+    }
+
+    #wildr h3 {
+        margin-top: 0;
+    }
+
     .socials {
         max-width: 40px;
         margin: 10px;
     }
-    
+
     #my-profile.img {
         width: 50%;
     }
-    
+
     /*Wildr Page Medium Screens*/
 
     #camping-apps {
@@ -790,16 +882,16 @@ Medium devices (640px and larger)
     #reflection {
         padding: 68px 0;
     }
-    
+
     #wildr-main p {
         max-width: 600px
     }
-    
+
     #about img {
         width: 50%;
         display: block;
-        margin-left: auto;  
-        margin-right: auto;  
+        margin-left: auto;
+        margin-right: auto;
         padding: 12px;
     }
 }
@@ -813,7 +905,7 @@ Large devices (1024px or larger)
         margin-left: auto;
         margin-right: auto;
     }
-    
+
     col-lg-7 {
         width: 60%;
     }
@@ -822,7 +914,7 @@ Large devices (1024px or larger)
         width: 33.3333333333%;
         float: left;
     }
-    
+
     .col-lg-5 {
         width: 40%;
     }
@@ -830,36 +922,42 @@ Large devices (1024px or larger)
     .col-lg-st-5 {
         width: 100%;
     }
-    
+
     .col-lg-7 {
         width: 60%;
         float: left;
         padding-bottom: 40px;
     }
-    
+
     .col-lg-8 {
         width: 40%;
         float: right;
     }
-    
+
     #about img {
         width: 40%;
         display: block;
-        margin-left: auto;  
-        margin-right: auto;  
+        margin-left: auto;
+        margin-right: auto;
         padding-top: 12px;
         padding-bottom: 48px;
     }
-    
+
     #about-page .col-md-6 {
         width: 100%;
     }
-    
-    #about h3 {margin-top: 0;}
-    
-    #about-main h2 {text-align: left;}
-    
-    #wildr h3 {margin-top: 0;}
+
+    #about h3 {
+        margin-top: 0;
+    }
+
+    #about-main h2 {
+        text-align: left;
+    }
+
+    #wildr h3 {
+        margin-top: 0;
+    }
 
     #container {
         max-width: 1200px;
@@ -870,11 +968,11 @@ Large devices (1024px or larger)
     #about .center {
         text-align: left;
     }
-   
+
     #usability-testing .center {
         text-align: left;
     }
-    
+
     /*Wildr Page Larger Screens*/
 
     #camping-apps {
@@ -928,18 +1026,12 @@ Large devices (1024px or larger)
     #reflection {
         padding: 96px 0;
     }
-    
+
     #contact p {
         text-align: center;
     }
-    
+
     #wildr-main p {
         max-width: 600px
     }
-
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
 }
