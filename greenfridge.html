@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Responsive Web App Design</title>
+    <link href="img/favicon.ico" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/28e8985ba9.js" crossorigin="anonymous"></script> <!-- Hamburger icon -->
+</head>
+
+<body id="greenfridge">
+    <header>
+        <div>
+            <div class="container">
+                <div class="navtoggle" id="myNavtoggle">
+                    <a href="index.html">
+                        <svg version="1.1" viewbox="0 0 70 70" xmlns="http://www.w3.org/2000/svg" class="logo">
+                            <title>Logo</title>
+                            <g fill="none" fill-rule="evenodd">
+                                <circle cx="35" cy="35" r="34" stroke="#0B0B0B" stroke-width="2" />
+                                <g transform="translate(15.818 24.2)" fill="#0B0B0B" fill-rule="nonzero">
+                                    <path id="icon-logo" d="m15.183 1.2422 0.47156 2.9391c-0.088125-0.015-0.17695-0.026328-0.26648-0.033984-0.089531-0.0076562-0.17711-0.011484-0.26273-0.011484-0.91906 0-1.6132 0.20641-2.0824 0.61922-0.46922 0.41281-0.70383 0.98078-0.70383 1.7039l-1.6753-0.69281c0-0.81031 0.16102-1.5606 0.48305-2.2509 0.32203-0.69031 0.79688-1.2437 1.4245-1.6601 0.62766-0.41641 1.3799-0.62461 2.2568-0.62461h0.1718c0.064219 0 0.12523 0.0039062 0.18305 0.011719zm-4.9247 15.749c1.6175 0 2.868 0.34969 3.7516 1.0491 0.88359 0.69938 1.3254 1.6803 1.3254 2.9428 0 1.1397-0.33445 2.1018-1.0034 2.8863-0.66891 0.78453-1.594 1.3775-2.7752 1.7789-1.1812 0.40141-2.5544 0.60211-4.1194 0.60211-2.5806 0-4.4654-0.36203-5.6543-1.0861-1.1889-0.72406-1.7834-1.6613-1.7834-2.8116 0-0.81531 0.3125-1.5056 0.9375-2.0709 0.625-0.56531 1.6662-0.87281 3.1238-0.9225l-0.15281 0.47297c-1.0222-0.1725-1.8101-0.51555-2.3637-1.0291-0.55359-0.51359-0.83039-1.2221-0.83039-2.1255 0-0.91125 0.35438-1.6657 1.0631-2.2634 0.70875-0.59766 1.6784-0.93992 2.9091-1.0268l1.7723 0.84422h-0.41391c-0.85094 0.062188-1.4529 0.23508-1.8059 0.51867-0.35297 0.28359-0.52945 0.60977-0.52945 0.97852 0 0.42312 0.1632 0.7393 0.48961 0.94852 0.32641 0.20922 0.80258 0.31383 1.4285 0.31383h4.6308zm-2.8055 6.4284c1.0384 0 1.8946-0.085781 2.5685-0.25734 0.67391-0.17156 1.1757-0.39984 1.5054-0.68484 0.32969-0.285 0.49453-0.60187 0.49453-0.95062 0-0.38062-0.14852-0.68344-0.44555-0.90844-0.29703-0.225-0.83461-0.3375-1.6127-0.3375h-5.0873c-0.47281 0-0.86461 0.12133-1.1754 0.36398-0.31078 0.24266-0.46617 0.57039-0.46617 0.9832 0 0.5575 0.37367 0.99547 1.121 1.3139 0.74734 0.31844 1.7799 0.47766 3.0977 0.47766zm0.029531-18.919c1.4128 0 2.6317 0.20547 3.6567 0.61641s1.8127 0.99453 2.363 1.7508c0.55031 0.75625 0.82547 1.6648 0.82547 2.7258 0 1.0406-0.27516 1.9422-0.82547 2.7047-0.55031 0.7625-1.338 1.3473-2.363 1.7545s-2.2439 0.61078-3.6567 0.61078c-2.2234 0-3.9202-0.45414-5.0904-1.3624-1.1702-0.90828-1.7552-2.1441-1.7552-3.7076 0-1.0609 0.27828-1.9695 0.83484-2.7258s1.3462-1.3398 2.3688-1.7508 2.2366-0.61641 3.642-0.61641zm0 2.5655c-0.79688 0-1.4541 0.22234-1.9718 0.66703-0.51766 0.44469-0.77648 1.0609-0.77648 1.8488 0 0.77562 0.25883 1.3888 0.77648 1.8396 0.51766 0.45078 1.1749 0.67617 1.9718 0.67617 0.79656 0 1.4537-0.22539 1.9713-0.67617 0.51766-0.45078 0.77648-1.064 0.77648-1.8396 0-0.78781-0.25883-1.4041-0.77648-1.8488s-1.1748-0.66703-1.9713-0.66703z" />
+                                    <path d="m35.306 0-9.0506 10.286-0.33703-0.33938-4.9453 5.6236-0.61547-3.8442 10.168-11.726h4.7803zm-12.916 0v19.8h-4.1442v-19.8h4.1442zm5.018 6.8297 8.1595 12.97h-4.7611l-6.5756-10.663 3.1772-2.3077z" />
+                                    <path d="m40.26 15.219c0.80812 0 1.4454 0.21805 1.9118 0.65414 0.46641 0.43609 0.69961 1.0277 0.69961 1.7749s-0.2332 1.3388-0.69961 1.7747c-0.46641 0.43594-1.1037 0.65391-1.9118 0.65391-0.80031 0-1.4355-0.21797-1.9057-0.65391-0.47016-0.43594-0.70523-1.0275-0.70523-1.7747s0.23508-1.3388 0.70523-1.7749c0.47016-0.43609 1.1054-0.65414 1.9057-0.65414z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                    <nav>
+                        <ul>
+                            <li class="nav_active"><a href="index.html">WORK</a></li>
+                            <li><a href="about.html">ABOUT</a></li>
+                            <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
+                            <li>
+								<p id="click_advance">
+									<a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+									<i class="fa-solid fa-bars"></i>
+									</a>
+								</p>
+							</li> <!-- Hamburger icon -->
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="greenfridge-main">
+		<button id="btnScrollToTop"> <!-- For the Scroll to Top Button -->
+			<i class="material-icons">keyboard_arrow_up</i>
+		</button>
+        <div>
+            <div id="greenfridge-hero">
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-1-cover@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-1-cover@2x.jpg" alt="Green Fridge Hero Image">
+                </picture>
+            </div>
+			<div class="jump-link-greenfridge"> <!-- Jump link navigation -->
+				<div class="container">
+                	<ul>
+						<li><a href="#greenfridge-research" class="jump-link-greenfridge-item">RESEARCH</a></li>
+                        <li><a href="#greenfridge-user-flow" class="jump-link-greenfridge-item">USER FLOW</a></li>
+                        <li><a href="#greenfridge-wireframes" class="jump-link-greenfridge-item">WIREFRAMES</a></li>
+						<li><a href="#greenfridge-competitors" class="jump-link-greenfridge-item">COMPETITOR ANALYSIS</a></li>
+						<li><a href="#greenfridge-prototypes" class="jump-link-greenfridge-item">PROTOTYPING</a></li>
+						<li><a href="#greenfridge-style-guide" class="jump-link-greenfridge-item">STYLE GUIDE</a></li>
+						<li><a href="#greenfridge-final-designs" class="jump-link-greenfridge-item">FINAL DESIGNS</a></li>
+						<li><a href="#greenfridge-outcomes" class="jump-link-greenfridge-item">OUTCOMES</a></li>
+                    </ul>
+				</div>
+			</div>
+            <div id="greenfridge-research">
+                <!-- 1. The Research section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-2-research@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-2-research@2x.jpg" alt="Tesearch; problem, solution and users">
+                </picture>
+			</div>
+			<div id="greenfridge-user-flow">
+                <!-- 2. The User Flow section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-3-user-flow@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-3-user-flow@2x.jpg" alt="User tasks and user flow diagram">
+                </picture>
+            </div>
+            <div id="greenfridge-wireframes">
+                <!-- 3. The Wireframes section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-4-wireframes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-4-wireframes@2x.jpg" alt="Mid-fidleity wireframes comparing iOS and Android designs.">
+                </picture>
+            </div>
+            <div id="greenfridge-competitors">
+				 <!-- 4. The Competitive Analysis section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-5-competitors@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-5-competitors@2x.jpg" alt="Competitor analysis of Olio app and Too Good To Go App.">
+                </picture>
+            </div>
+            <div id="greenfridge-prototypes">
+ 				<!-- 5. The Prototying section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-6a-prototypes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-6a-prototypes@2x.jpg" alt="Prototyping the apps; objective, tests, results synthesis and error rating">
+                </picture>
+				<div>
+					<br>
+                	<p>
+						<a href="https://www.sketch.com/s/6c698f02-7083-4278-afe6-ff67bf0e7cf1/prototype/a/100C6D72-98E8-4985-8014-A530AE8D5C61" target="_blank">VIEW ANDROID PROTOTYPE</a>
+					</p>
+					<p>
+						<a href="https://www.sketch.com/s/40ff7ca7-9027-427c-8717-609db3e7cb79/prototype/a/2B699C40-CBAA-4D8B-84C7-EB3FBD58A91C" target="_blank">VIEW iOS PROTOTYPE</a>
+					</p>
+					<p>
+						<a href="https://www.dropbox.com/s/gywqpi1j2r1s1ae/The%20Green%20Fridge%20Prototyping%20Report.jpg?dl=0" target="_blank">VIEW FULL RESULTS SYNTHESIS AND ERROR RATINGS</a>
+					</p>
+					<br>
+            	</div>
+				<picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-6b-prototypes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-6b-prototypes@2x.jpg" alt="Sample results synthesis and error ratings. Wireframes with updated designs">
+                </picture>
+            </div>
+			<div id="greenfridge-style-guide">
+ 				<!-- 6. The Style Guide section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-7-style-guide@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-7-style-guide@2x.jpg" alt="Style guide; color palette, typography, icons, buttons and actions.">
+                </picture>
+            </div>
+			<div id="greenfridge-final-designs">
+ 				<!-- 7. The Final Designs section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-8-final-designs@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-8-final-designs@2x.jpg" alt="Final iOS and Android designs">
+                </picture>
+            </div>
+			<div id="greenfridge-outcomes">
+ 				<!-- 8. The Outcomes section -->
+                <picture>
+                    <source srcset="img/project_the-green-fridge/img_gfridge-9-outcomes@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_the-green-fridge/img_gfridge-9-outcomes@2x.jpg" alt="Outcomes; lessons learned and next steps.">
+                </picture>
+			</div>
+		</div>
+    </main>
+    <footer id="contact">
+        <div class="container">
+            <h2>CONTACT ME</h2>
+            <p>
+                <!-- open paragraph -->
+                Send me an email or reach me on my socials, I would love to hear from you!
+            </p><!-- end paragraph -->
+            <div>
+                <a href="mailto:gilliansking-at-gmail.com" class="button contact" target="_blank">Email me</a>
+            </div>
+            <!--Social Media Layout and Placeholders-->
+            <div>
+                <a href="https://www.behance.net/gilliansking" target="_blank">
+                    <svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
+                        <title>Behance</title>
+                        <g fill="none" fill-rule="evenodd">
+                            <g transform="translate(-0)" fill="#F6F6F0" fill-rule="nonzero">
+                                <path id="icon-behance" d="m183.99 235h-43.988v-44.997h43.988s26.012-0.61003 26.012 22.513-26.012 22.484-26.012 22.484z" />
+                                <path d="m217 291.97c0 27.729-31.119 27.028-31.119 27.028h-46.881v-53.997h46.794s31.206-0.67204 31.206 26.969z" />
+                                <path d="m344.15 235.26c-15.971 0-29.091 11.956-31.709 30.691h63.418c-2.5018-18.676-15.767-30.691-31.709-30.691zm0 0c-15.971 0-29.091 11.956-31.709 30.691h63.418c-2.5018-18.676-15.767-30.691-31.709-30.691zm130.31-235.26h-438.55c-18.034 0-35.905 15.942-35.905 35.757v438.73c0 21.256 17.133 37.508 35.905 37.508h439.42c17.413 0 36.681-13.603 36.681-37.791v-435.4-3.7699c-0.49781-15.366-13.419-35.038-37.548-35.038zm-170.57 168.73h80.116v19.956h-80.116v-19.956zm-76.422 176.67c-11.025 5.44-24.873 7.1564-37.818 7.1564h-93.644v-196.68h102.95c12.742 0 52.189 7.5927 52.364 45.498 0 26.182-14.545 38.167-27.084 43.927 0 0 32.698 9.7164 35.316 38.633 2.6182 28.916-2.56 46.895-32.087 61.469zm188.1-54.255h-103.13c-0.98909 22.72 15.622 36.276 34.502 36.276 13.386 0.02868 25.694-7.334 32-19.142h33.775c-9.28 33.804-36.48 47.884-68.625 47.884-42.095 0-72.029-33.745-72.029-75.404 0-41.658 32.262-75.433 72.029-75.433 39.767 0 71.913 33.775 71.913 75.433 0 3.6073 0 7.04-0.43636 10.385zm-71.418-55.884c-15.971 0-29.091 11.956-31.709 30.691h63.418c-2.5018-18.676-15.767-30.691-31.709-30.691z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/gilliansking368/" target="_blank">
+                    <svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
+                        <title>LinkedIn</title>
+                        <g fill="none" fill-rule="evenodd">
+                            <g transform="translate(-0)" fill="#F6F6F0" fill-rule="nonzero">
+                                <path d="m475.08 0h-438.15c-18.52 0-36.931 14.238-36.931 36.926v438.15c0 20.87 17.129 36.926 36.54 36.926h438.54c19.785 0 36.926-15.455 36.926-36.926v-438.62c0-17.609-14.241-36.457-36.926-36.457zm-282.66 375.41h-56.002v-160h56.002v160zm-28.001-184c-15.464 0-28.001-12.536-28.001-28.001 0-15.464 12.536-28.001 28.001-28.001s28.001 12.536 28.001 28.001c0 15.464-12.535 28-27.999 28.001h-0.001795zm212 184h-47.999v-77.959c0-18.594-2.0642-42.509-27.548-42.509-25.874 0-29.828 20.253-29.828 41.163v79.305h-46.624v-160h44.609v21.594h0.68746c6.6412-12.608 22.874-21.594 47.062-21.594 50.327 0 59.64 28.898 59.64 72.066v87.932z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/gilly_moonchild/" target="_blank">
+                    <svg version="1.1" viewbox="0 0 512 512" xmlns="http://www.w3.org/2000/svg" class="socials">
+                        <title>Instagram</title>
+                        <g fill="none" fill-rule="evenodd">
+                            <g transform="translate(0)" fill="#F6F6F0" fill-rule="nonzero">
+                                <path id="icon-instagram" d="m358.7 178.31c-2.1109-5.72-5.4785-10.897-9.8543-15.147-4.2498-4.3758-9.4237-7.7434-15.147-9.8543-4.6418-1.8028-11.615-3.9487-24.459-4.5333-13.894-0.63362-18.06-0.77014-53.234-0.77014-35.178 0-39.344 0.13302-53.234 0.76664-12.844 0.58811-19.821 2.734-24.459 4.5368-5.7235 2.1109-10.901 5.4785-15.147 9.8543-4.3758 4.2498-7.7434 9.4237-9.8578 15.147-1.8028 4.6418-3.9487 11.619-4.5333 24.462-0.63362 13.891-0.77014 18.056-0.77014 53.234 0 35.174 0.13652 39.34 0.77014 53.234 0.58461 12.844 2.7305 19.817 4.5333 24.459 2.1144 5.7235 5.4785 10.897 9.8543 15.147 4.2498 4.3758 9.4237 7.7434 15.147 9.8543 4.6418 1.8063 11.619 3.9522 24.462 4.5368 13.891 0.63362 18.053 0.76664 53.231 0.76664 35.181 0 39.347-0.13302 53.234-0.76664 12.844-0.58461 19.821-2.7305 24.462-4.5368 11.489-4.4318 20.57-13.512 25.002-25.002 1.8028-4.6418 3.9487-11.615 4.5368-24.459 0.63362-13.894 0.76664-18.06 0.76664-53.234 0-35.178-0.13302-39.344-0.76664-53.234-0.58461-12.844-2.7305-19.821-4.5368-24.462zm-102.69 145.69c-37.557 0-68.002-30.442-68.002-68s30.445-68 68.002-68c37.553 0 67.998 30.442 67.998 68s-30.445 68-67.998 68zm69.998-122c-8.8361 0-16-7.1639-16-16s7.1639-16 16-16 16 7.1639 16 16c-0.003543 8.8361-7.1639 16-16 16z" />
+                                <path d="m300 256c0 24.301-19.699 44-44 44s-44-19.699-44-44 19.699-44 44-44 44 19.699 44 44z" />
+                                <path d="m36.926 0c-20.395 0-36.926 16.531-36.926 36.926v438.15c0 20.395 16.531 36.926 36.926 36.926h438.15c20.395 0 36.926-16.531 36.926-36.926v-438.15c0-20.395-16.531-36.926-36.926-36.926h-438.15zm350.28 310.42c-0.63839 14.052-2.8728 23.645-6.1349 32.042-6.8575 17.731-20.874 31.748-38.605 38.605-8.3938 3.2621-17.991 5.493-32.039 6.1349-14.076 0.6419-18.573 0.79624-54.421 0.79624-35.852 0-40.345-0.15434-54.425-0.79624-14.048-0.6419-23.645-2.8728-32.039-6.1349-8.8112-3.3147-16.788-8.5096-23.382-15.227-6.7136-6.5909-11.908-14.571-15.223-23.379-3.2621-8.3938-5.4965-17.991-6.1349-32.039-0.64892-14.08-0.79974-18.577-0.79974-54.425s0.15083-40.345 0.79624-54.421c0.63839-14.052 2.8693-23.645 6.1314-32.042 3.3147-8.8077 8.5131-16.788 15.23-23.379 6.5909-6.7172 14.571-11.912 23.379-15.227 8.3973-3.2621 17.991-5.493 32.042-6.1349 14.076-0.6419 18.573-0.79624 54.421-0.79624s40.345 0.15434 54.421 0.79974c14.052 0.63839 23.645 2.8693 32.042 6.1279 8.8077 3.3147 16.788 8.5131 23.382 15.23 6.7136 6.5944 11.912 14.571 15.223 23.379 3.2656 8.3973 5.4965 17.991 6.1384 32.042 0.6419 14.076 0.79273 18.573 0.79273 54.421s-0.15083 40.345-0.79624 54.421z" />
+                            </g>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+            <div>
+                <p>Website design and content © 2022 Gillian King</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

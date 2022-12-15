@@ -10,9 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/28e8985ba9.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> <!-- For the scroll to top button -->
     <title>Gillian King UI Designer Maryland USA</title>
 </head>
 
@@ -40,7 +41,13 @@
                         <li class="nav_active"><a href="index.html">WORK</a></li>
                         <li><a href="about.html">ABOUT</a></li>
                         <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li> <!-- Hamburger icon -->
+                        <li>
+							<p id="click_advance">
+								<a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+								<i class="fa-solid fa-bars"></i>
+								</a>
+							</p>
+						</li> <!-- Hamburger icon -->
                     </ul>
                 </nav>
             </div>
@@ -49,6 +56,9 @@
 
 
     <main>
+		<button id="btnScrollToTop"> <!-- For the Scroll to Top Button -->
+			<i class="material-icons">keyboard_arrow_up</i>
+		</button>
         <!-- For the hero section -->
         <div id="hero">
             <div class="container">
@@ -66,7 +76,7 @@
                     <h2>My work</h2>
                 </div>
                 <!--Project One-->
-                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;">
+                <div class="row">
                     <!-- open row that holds (2) columns for project -->
                     <div class="column col-md-6 col-lg-7">
                         <!-- open first column (used for image) -->
@@ -85,9 +95,8 @@
                         <a href="wildr.html" class="button">VIEW PROJECT</a><!-- button or link label -->
                     </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
-
                 <!--Project Two-->
-                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;">
+                <div class="row">
                     <!-- open row that holds (2) columns for project -->
                     <div class="column col-md-6 col-lg-7">
                         <!-- open first column (used for image) -->
@@ -103,12 +112,12 @@
                             <!-- open paragraph -->
                             An intuitive e-commerce responsive web app to use on-the-go.
                         </p><!-- end paragraph -->
-                        <a href="#" class="button">VIEW PROJECT</a><!-- button label -->
+                        <a href="bantay.html" class="button">VIEW PROJECT</a><!-- button label -->
                     </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
 
                 <!--Project Three-->
-                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;">
+                <div class="row">
                     <!-- open row that holds (2) columns for project -->
                     <div class="column col-md-6 col-lg-7">
                         <!-- open first column (used for image) -->
@@ -124,12 +133,12 @@
                             <!-- open paragraph -->
                             Designing for Android and iOS specific native apps.
                         </p><!-- end paragraph -->
-                        <a href="#" class="button">VIEW PROJECT</a><!-- button label -->
+                        <a href="greenfridge.html" class="button">VIEW PROJECT</a><!-- button label -->
                     </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
 
                 <!--Project Four-->
-                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;">
+                <div class="row">
                     <!-- open row that holds (2) columns for project -->
                     <div class="column col-md-6 col-lg-7">
                         <!-- open first column (used for image) -->
@@ -145,12 +154,12 @@
                             <!-- open paragraph -->
                             A native app for all your favorite 80s music.
                         </p><!-- end paragraph -->
-                        <a href="#" class="button">VIEW PROJECT</a><!-- button label -->
+                        <a href="jambox.html" class="button">VIEW PROJECT</a><!-- button label -->
                     </div><!-- end second column -->
                 </div><!-- end row that holds (2) columns for project -->
 
                 <!--Project Five-->
-                <div class="row" style="border-bottom: 2px solid #4a4a4a; margin-bottom: 40px;">
+                <div class="row">
                     <!-- open row that holds (2) columns for project -->
                     <div class="column col-md-6 col-lg-7">
                         <!-- open first column (used for image) -->

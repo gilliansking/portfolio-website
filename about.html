@@ -11,8 +11,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://kit.fontawesome.com/28e8985ba9.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Gillian King UI Designer Maryland USA</title>
 </head>
 
@@ -40,7 +41,13 @@
                         <li><a href="index.html">WORK</a></li>
                         <li class="nav_active"><a href="about.html">ABOUT</a></li>
                         <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
-                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li> <!-- Hamburger icon -->
+                       	<li>
+							<p id="click_advance">
+								<a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+								<i class="fa-solid fa-bars"></i>
+								</a>
+							</p>
+						</li> <!-- Hamburger icon -->
                     </ul>
                 </nav>
             </div>
@@ -49,6 +56,9 @@
 
 
     <main id="about-main">
+		<button id="btnScrollToTop"> <!-- For the Scroll to Top Button -->
+			<i class="material-icons">keyboard_arrow_up</i>
+		</button>
         <!-- For the hero section -->
         <div style="margin-bottom: 24px; margin-top: 36px">
             <div class="container">
@@ -77,7 +87,7 @@
                             <p>
                                 When I am not designing, you will find me enjoying the outdoors, planning my next trip, or stalking Instagram foodie accounts to find my next meal out.
                             </p>
-                            <div class="center"><a href="files/resume_gillian-king.pdf" target="_blank" class="button secondary">Resume</a></div>
+                            <div class="center"><a href="files/ui-designer_gillian-king_resume.pdf" target="_blank" class="button secondary">Resume</a></div>
                         </div>
                         <div class="column col-lg-8">
                             <!-- Column two -->
@@ -86,20 +96,13 @@
                                 <!-- Column two, row one -->
                                 <h3>Skills</h3>
                                 <ul>
-                                    <li>UI elements, patterns, and hierarchy</li>
-                                    <li>Design principles and heuristics</li>
-                                    <li>Wireframing and prototyping</li>
-                                    <li>Mobile app design</li>
-                                    <li>Using design systems</li>
-                                    <li>Responsive web design</li>
-                                    <li>Designing responsive grids</li>
-                                    <li>Interaction design and animation</li>
-                                    <li>Creating style guides</li>
-                                    <li>Building a cohesive brand</li>
-                                    <li>Designing symbols and iconography</li>
-                                    <li>UX fundamentals and user psychology</li>
-                                    <li>User research and user testing</li>
-                                    <li>Interpreting business requirements</li>
+                                    <li>Wireframing</li>
+                                    <li>Prototyping</li>
+                                    <li>User research</li>
+                                    <li>User testing</li>
+									<li>Responsive web designs</li>
+                                    <li>Native app design</li>
+                                    <li>Brand design</li>
                                 </ul>
                             </div>
                             <div class="column col-md-6 col-lg-st-5">
@@ -109,7 +112,6 @@
                                     <li>Sketch</li>
                                     <li>Figma</li>
                                     <li>Adobe XD</li>
-                                    <li>Invision</li>
                                     <li>HTML, CSS and JavaScript</li>
                                 </ul>
                             </div>

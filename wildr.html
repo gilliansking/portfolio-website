@@ -6,9 +6,9 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500;6..96,700;6..96,900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Responsive Web App Design</title>
     <link href="img/favicon.ico" rel="shortcut icon">
     <script src="https://kit.fontawesome.com/28e8985ba9.js" crossorigin="anonymous"></script> <!-- Hamburger icon -->
@@ -37,14 +37,24 @@
                             <li class="nav_active"><a href="index.html">WORK</a></li>
                             <li><a href="about.html">ABOUT</a></li>
                             <li><a href="#contact" onclick="menuToggle()">CONTACT</a></li>
-                            <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li> <!-- Hamburger icon -->
+                            <li>
+								<p id="click_advance">
+									<a href="javascript:void(0);" class="icon" onclick="menuToggle()">
+									<i class="fa-solid fa-bars"></i>
+									</a>
+								</p>
+							</li> <!-- Hamburger icon -->
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
     </header>
+
     <main id="wildr-main">
+		<button id="btnScrollToTop"> <!-- For the Scroll to Top Button -->
+			<i class="material-icons">keyboard_arrow_up</i>
+		</button>
         <div>
             <div id="hero-wildr">
                 <picture>
@@ -52,7 +62,7 @@
                     <img src="img/project_wildr/img_wildr_1-cover@2x.jpg" alt="Wildr, a location-based responsive web app for dispersed camping. Image of trees with Wildr app displayed on an ipad. Designer's role, user research and UI Design. Timeline, two months.">
                 </picture>
             </div>
-            <div id="camping-apps">
+			<div id="camping-apps">
                 <!-- Camping apps section -->
                 <div class="container">
                     <h1>Wildr</h1>
@@ -75,6 +85,20 @@
                     </div>
                 </div>
             </div>
+			<div class="jump-link-wildr"> <!-- Jump link navigation -->
+				<div class="container">
+                	<ul>
+						<li><a href="#user-research" class="jump-link-wildr-item">USER RESEARCH</a></li>
+                        <li><a href="#jtbd" class="jump-link-wildr-item">USER FLOW</a></li>
+                        <li><a href="#sketches" class="jump-link-wildr-item">EXPLORATORY SKETCHING</a></li>
+						<li><a href="#usability-testing" class="jump-link-wildr-item">USABILITY TESTING</a></li>
+						<li><a href="#preference-testing" class="jump-link-wildr-item">PREFERENCE TESTING</a></li>
+						<li><a href="#style-guide" class="jump-link-wildr-item">STYLE GUIDE</a></li>
+						<li><a href="#responsive-design" class="jump-link-wildr-item">RESPONSIVE DESIGN</a></li>
+						<li><a href="#reflection" class="jump-link-wildr-item">REFLECTION</a></li>
+                    </ul>
+				</div>
+			</div>
             <div id="user-research">
                 <!-- User research section -->
                 <div class="container">
@@ -348,12 +372,10 @@
             </div>
             <div id="mobile-mockups">
                 <!-- Mobile Mockups section -->
-                <div class="container">
-                    <picture>
-                        <source srcset="img/project_wildr/img_wildr_13-mockups@1x.jpg" media="(max-width:767px)">
-                        <img src="img/project_wildr/img_wildr_13-mockups@2x.jpg" alt="Five ophones showing the final design of the login page, search page, results page, add a dispersed campground page and reviews submitted poage.">
-                    </picture>
-                </div>
+            	<picture>
+                	<source srcset="img/project_wildr/img_wildr_13-mockups@1x.jpg" media="(max-width:767px)">
+                    <img src="img/project_wildr/img_wildr_13-mockups@2x.jpg" alt="Five ophones showing the final design of the login page, search page, results page, add a dispersed campground page and reviews submitted poage.">
+                </picture>
             </div>
             <div id="reflection">
                 <!-- Mobile Mockups section -->
